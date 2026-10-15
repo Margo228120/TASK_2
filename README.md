@@ -28,7 +28,7 @@
 
 Всё как в дне 1:
 
-1. Открой https://github.com/NotAXaliks/TASK_2 и нажми **Fork** → **Create fork**.
+1. Открой https://github.com/aidarmar123/TASK_2 и нажми **Fork** → **Create fork**.
 2. На странице **своей** копии нажми **Code** → **HTTPS** и скопируй адрес.
 3. В Git Bash:
 
@@ -46,7 +46,7 @@ README.md  queries.sql  shop.sql
 - `shop.sql` — описание базы и все данные. Его **не меняй**.
 - `queries.sql` — сюда ты будешь писать ответы.
 
-> ⚠️ Проверь, что в адресе стоит **твой** ник, а не `NotAXaliks`.
+> ⚠️ Проверь, что в адресе стоит **твой** ник, а не `aidarmar123`.
 
 ---
 
