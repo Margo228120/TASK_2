@@ -105,12 +105,29 @@ WHERE oi.product_id IS NULL;
 
 -- Задание 20. Добавь товар «Ручка шариковая синяя»: категория 3, цена 50, на складе 200
 
+INSERT INTO products (name, category_id, price, stock) VALUES ('Ручка шариковая синяя', 3, 50, 200);
 
 -- Задание 21. Подними цены на все товары категории «Канцелярия» на 10%
 
+UPDATE products SET price = price * 110 / 100 WHERE category_id = 3
 
 -- Задание 22. Удали товар «Ручка шариковая синяя»
 
+DELETE FROM products WHERE name = 'Ручка шариковая синяя';
 
 -- Задание 23. Создай таблицу employees и добавь в неё шесть сотрудников (см. README.md)
 
+CREATE TABLE emplooyeees (
+    id   INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	full_name TEXT NOT NULL,
+	department TEXT NOT NULL,
+	 position TEXT NOT NULL
+);
+
+INSERT INTO emplooyeees (full_name, department, position) VALUES 
+('Смирнова О.И.','Бухгалтерия' , 'Главный бухгалтер'), 
+('Петров В.С.', 'Склад' , 'Кладовщик'),
+('Иванова А.П.', 'Склад', 'Начальник склада'),
+('Лебедева М.К.','Отдел кадров','Начальник отдела кадров'),
+('Соколов И.Н.','Отдел продаж',	'Менеджер по продажам'),
+('Новиков Р.Т.','Разработка', 'Стажёр-программист');
